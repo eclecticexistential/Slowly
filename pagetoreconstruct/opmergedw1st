@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+        <style>
+      body {
+  margin-top: 60px;
+}
+
+    </style>
+<!-- only use of style -->
+    <script>
+  window.console = window.console || function(t) {};
+</script>
+    
+</head>
+
+
+  <body translate="no">
+    <div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center">Zaevion Dobson</h1>
+      <h2 class="text-center"><em>The fifteen year old who nobly died saving three girls</em></h2>
+      <div class="thumbnail"><img class="center-block" src="https://pbs.twimg.com/media/CWhpAOJUsAA67aZ.jpg">
+      <div class="caption text-center">Zaevion Dobson poses in his football uniform</div>
+</div>
+<!-- ^ worked more efficiently than prior CSS style compilation -->
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+  <h3>Information about this hero:</h3>
+<!-- strong &gt; bold -->
+  <ul>
+    <li>Born in Knoxville, Tennesse on June 28th, <strong>2000</strong></li>
+    <li>He was enrolled at Fulton High School</li>
+    <li>Went by the nickname Zae</li>
+    <li>Very social, always establishing that he cared</li>
+    <li>Zaevion liked to make people laugh</li>
+    <li>He attended Martin Chapel United Methodist Church</li>
+    <li>Played as a linebacker for his football team</li>
+    <li>Survived by his two brothers, Markastin Taylor and Zackelyn Dobson</li>
+  </ul>
+
+<!-- blockquote indicates enclosed text is an extended quotation. footer italics, shrinks, and grays text. cite adds long dash -->
+<blockquote>
+        <p>"Hearts are broken here... We lost a fine young man."</p>
+    <footer><cite>Jody Wright, assistant principal of Fulton High School</cite></footer>
+        <p>"An outstanding young man... Will always be remembered as a hero."</p>
+    <footer><cite>Zaevion's football team mates</cite></footer>
+        <p>"Zae, he was an awesome kid, awesome brother. Just know that I miss him. I miss my brother."</p>
+    <footer><cite>Zack Dobson, Zaevion's seven-teen year old brother</cite></footer>
+
+</blockquote>
+
+      <h3>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Zaevion_Dobson" rel="noopener noreferrer">Wikipedia entry</a>.</h3>
+
+<!-- Original code uses target="_blank" inside the ahref, search suggests that it specifies where to open, however it opens without it in a new tab... added rel code per Alex's (the CEO and founder of jitbit) suggestion that phishing may be used with the target="_blank" code, due to redirect. Also suggested that anytime you would use window.open(); you're vulnerable, so reset the opener property with 
+var newWnd = window.open();
+newWnd.opener = null; -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<footer class="text-center">  
+    <hr>
+    <p>Written and coded by <a href="https://github.com/eclecticexistential" rel="noopener noreferrer">eclecticexistential</a>.</p>
+  </footer>
+</div>
+    <!-- Following script resizes for mobile -->
+    <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+  </body>
+</html>
