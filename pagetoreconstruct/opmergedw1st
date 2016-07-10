@@ -56,7 +56,9 @@
 
       <h3>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Zaevion_Dobson" rel="noopener noreferrer">Wikipedia entry</a>.</h3>
 
-<!-- Original code uses target="_blank" inside the ahref, search suggests that it specifies where to open, however it opens without it in a new tab... added rel code per Alex's (the CEO and founder of jitbit) suggestion that phishing may be used with the target="_blank" code, due to redirect. Also suggested that anytime you would use window.open(); you're vulnerable, so reset the opener property with 
+<!-- Original code uses target="_blank" inside the ahref, search suggests that it specifies where to open, however it opens without it in a new tab... added rel code per Alex's (the CEO and founder of jitbit) suggestion that phishing may be used with the target="_blank" code, due to redirect. 
+*Edit: rel="noopener noreferrer" also removes the referrer HTTP header which will stop friendly sites from seeing traffic from you.
+Also suggested that anytime you would use window.open(); you're vulnerable, so reset the opener property with 
 var newWnd = window.open();
 newWnd.opener = null; -->
 
